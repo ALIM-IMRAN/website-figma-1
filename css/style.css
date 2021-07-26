@@ -1,0 +1,106 @@
+.back-img1{
+    background-image: url(BG-stuff.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+}
+.back-img2{
+    background-image: url(hero.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+
+}
+/* to-keep-some-space-from-top  */
+.h-box{
+    padding-top: 150px;
+} 
+/* navbar-underline-animation  */
+.u-line{
+    color: yellowgreen;
+    text-decoration: none;
+    position: relative;
+  }
+  .u-line::before{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #4BA87D;
+      width: 100%;
+      height: 5px;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+  }
+  .u-line:hover:before{
+      transform: scaleX(1);
+      transform-origin: bottom left;
+  }
+  .u-line::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #4BA87D;
+      width: 100%;
+      height: 5px;
+      transform: scaleX(0);
+      transform-origin: bottom left;
+      transition: transform 0.25s ease-out;
+  }
+  .u-line:hover::after{
+      transform: scaleX(1);
+      transform-origin: bottom right;
+  }
+
+  /* Button-customization  */
+  .b1{
+    background-color: #4BA87D;
+    border:3px solid #4BA87D;
+  }
+  .b1 h5{
+      margin: 0;
+  }
+  .b1 h5{
+    margin: 0px;
+  }
+  .b2{
+      border:3px solid #4BA87D;
+      background-color: white;
+  }
+
+  .clr{
+      color: #4BA87D;
+  }
+
+  /* carousel customization */
+  
+  .caro-cap{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    color: white;
+    text-align: center;
+  }
+  .caro-img{
+    background-image: url(BG-stuff.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  /* card-section-1-custom  */
+  .card-link{
+      text-decoration: none;
+  }
+
+  /* pick-a-plan-background  */
+  .pick-bg{
+      background-color:#4BA87D ;
+      color: white;
+  }
+
+  /* footer-section */
+  .f-font{
+      color: black;
+      text-decoration: none;
+  }
