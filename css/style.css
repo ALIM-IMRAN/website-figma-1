@@ -57,17 +57,43 @@
   .b1{
     background-color: #4BA87D;
     border:3px solid #4BA87D;
+    transition: transform 0.5s ease-in,background-color 0.5s ease-in;
+    box-shadow: 4px 4px 10px gray;
   }
   .b1 h5{
       margin: 0;
+      color: white;
+      transition: color 0.8s ease-in;
   }
-  .b2 h5{
-    margin: 0px;
-  }
+
   .b2{
-      border:3px solid #4BA87D;
-      background-color: white;
+    border:3px solid #4BA87D;
+    background-color: white;
+    transition: transform 0.5s ease-in, background-color 0.5s ease-in ;
+    box-shadow: 4px 4px 10px gray;
+ }
+  .b2 h5{
+    margin: 0;
+    transition: color 0.8s ease-in;
   }
+
+
+/* button animation hover effect */
+.b1:hover{
+    background-color: white;
+    transform: scale(1.15);
+}
+.b1:hover h5{
+    color: #4BA87D ;
+}
+.b2:hover{
+    background-color: #4BA87D;
+    transform: scale(1.15);
+}
+.b2:hover h5{
+    color: white ;
+}
+
 
   .clr{
       color: #4BA87D;
@@ -103,4 +129,14 @@
   .f-font{
       color: black;
       text-decoration: none;
+      background-position: 100%;
+  }
+
+  /* media-query  */
+
+  @media only screen and (max-width:688px) {
+    .back-img2{
+        background-image: url(hero.png);
+        background-size: 100%;
+    }
   }
